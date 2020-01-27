@@ -5,11 +5,15 @@ import helper
 import channel
 import config
 
+# Server configurations are changed from ./config.py
+
 os.chdir(os.getcwd() + "/" + config.default_directory)
 print(os.getcwd())
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
-server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1);  #To reuse the same port 
+server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1);
+
+# socket option (SO_REUSEADDR) has to be set on to prevent crashes due to port unavailability
 
 HOST = config.host
 PORT = config.port
