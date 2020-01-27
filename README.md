@@ -3,9 +3,13 @@ Arna Web Server is a simple and lightweight web server written over python socke
 
 FEACTURES:
    -> Supports 20+ mime types and can handle unknown mimes considering unknown MIMES as text/plain.
+   
    -> Can handle high traffic. (Tested upto 20,000 per minute and up)
+   
    -> Can handle large sized files 
+   
    -> Made with python and is easy to make changes as you like
+   
    -> Error pages coming (soon)
    
 STABLITY 
