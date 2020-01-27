@@ -1,7 +1,7 @@
 host = "127.0.0.1";
 port = 8080;                    
 
-#Note :Use of port 80 may require super user or equivalent previlage 
+#Note :Use of port 80 may require super user or equivalent previlages
 #depending upon your system configuration. 
 
 default_pages = ["index.html","index.htm","default.html"];
@@ -16,7 +16,7 @@ maximum_concurrent_connections = 100;
 #Trying to change to a different directory outside will break things and no-such except-
 #-ions handlers has been set till now.
 
-#Although, tt is further processed,omission of '/' or '\' or './' symbol is highly encouraged.
+#Although, it is further processed, omission of '/' or '\' or './' symbol is highly encouraged.
 
 default_directory = "htdocs";
 dir_listing = True;                
